@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "artmarketplace_backend": {
+      "main": "src/artmarketplace_backend/main.mo",
+      "type": "motoko"
+    },
+    "artmarketplace_frontend": {
+      "dependencies": [
+        "artmarketplace_backend"
+      ],
+      "source": [
+        "src/artmarketplace_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "artmarketplace_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
